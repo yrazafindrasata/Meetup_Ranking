@@ -1,0 +1,26 @@
+{% extends 'home/index.html.twig' %}
+{% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+    {% block tabconference %}
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Moyenne</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for note in notes %}
+                <tr>
+                    <td><a href="{{ path('seeConference',{'id':note.conference.id, 'idC':note.conference.id,'idU': app.user.id}) }}">{{ note.conference.name }}</a></td>
+                    <td>{{ note.conference.description }}</td>
+                    <td>{{ note.conference.moyenne }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'home/index.html.twig' %}
+{% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+    {% block tabconference %}
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Moyenne</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if conferences.10 is defined %}
+                {% for conference in 0..conferences.9 %}
+                    <tr>
+                        <td><a href="{{ path('seeConference',{'id':conference.id, 'idC':conference.id,'idU': app.user.id}) }}">{{ conference.name }}</a></td>
+                        <td>{{ conference.description }}</td>
+                        <td>{{ conference.moyenne }}</td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                {% for conference in conferences %}
+                    <tr>
+                        <td><a href="{{ path('seeConference',{'id':conference.id, 'idC':conference.id,'idU': app.user.id}) }}">{{ conference.name }}</a></td>
+                        <td>{{ conference.description }}</td>
+                        <td>{{ conference.moyenne }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+            </tbody>
+        </table>
+    {% endblock %}
+{% endblock %}

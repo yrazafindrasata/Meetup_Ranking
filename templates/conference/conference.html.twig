@@ -1,0 +1,24 @@
+{% extends 'home/index.html.twig' %}
+{% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+    <ul>
+        <li>Topic: {{conference.name}}</li>
+        <li>Description: {{conference.description}}</li>
+        <li>Rating: {{moyenne}}</li>
+    </ul>
+
+    <h3>My Rating</h3>
+    {{ form_start(form) }}
+    {{ form_widget(form.value, {'attr': {'onchange': 'updateTextInput(this.value);'}}) }}
+    <input type="text" id="textInput" value="" readonly>
+    <button type="submit" class="btn btn-success">Add</button>
+    {{ form_end(form) }}
+
+    <script>
+        function updateTextInput(val) {
+            document.getElementById('textInput').value=val;
+        }
+    </script>
+{% endblock %}
