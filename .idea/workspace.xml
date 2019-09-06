@@ -4,6 +4,7 @@
     <list default="true" id="8351b5db-c500-4549-ba49-be816091c940" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +183,7 @@
       <updated>1567450998214</updated>
       <workItem from="1567450999814" duration="14000" />
       <workItem from="1567451054231" duration="86512000" />
-      <workItem from="1567752308570" duration="12928000" />
+      <workItem from="1567752308570" duration="13692000" />
     </task>
     <servers />
   </component>

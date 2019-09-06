@@ -257,7 +257,6 @@ class ConferenceController extends AbstractController
             $form = $this->createForm(NoteType::class,$note);
             $form->handleRequest($request);
             if($form->isSubmitted()&&$form->isValid()) {
-                $conference->setEval(1);
                 $em->persist($conference);
                 $em->persist($note);
                 $em->flush();
