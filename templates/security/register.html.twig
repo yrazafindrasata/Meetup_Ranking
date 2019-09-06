@@ -1,5 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'home/index.html.twig' %}
 {% block body %}
+    {% block navbar %}
+        {{ parent() }}
+    {% endblock %}
+    <h1>Sign Up</h1>
     {{ form_start(form) }}
     {{ form_row(form.firstname) }}
     {{ form_row(form.lastname) }}

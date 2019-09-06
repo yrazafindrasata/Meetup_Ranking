@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8351b5db-c500-4549-ba49-be816091c940" name="Default Changelist" comment="" />
+    <list default="true" id="8351b5db-c500-4549-ba49-be816091c940" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ConferenceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ConferenceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Conference.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Conference.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/users.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/users.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/addConference.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/addConference.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/conference.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/conference.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/conferenceNotVoted.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/conferenceNotVoted.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/conferenceVoted.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/conferenceVoted.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/conference/top10.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/conference/top10.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +55,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -132,8 +156,9 @@
   <component name="ProjectId" id="1QIH4WkDNQzcwwSJX0lkYUNFwdA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/user" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -144,11 +169,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\meetup_ranking\templates\user" />
       <recent name="C:\wamp64\www\meetup_ranking\templates\admin" />
       <recent name="C:\wamp64\www\meetup_ranking\templates\conference" />
       <recent name="C:\wamp64\www\meetup_ranking\templates\home" />
       <recent name="C:\wamp64\www\meetup_ranking\src\Manager" />
-      <recent name="C:\wamp64\www\meetup_ranking\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -175,11 +200,22 @@
       <updated>1567450998214</updated>
       <workItem from="1567450999814" duration="14000" />
       <workItem from="1567451054231" duration="86512000" />
-      <workItem from="1567752308570" duration="4926000" />
+      <workItem from="1567752308570" duration="12212000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

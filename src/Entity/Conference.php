@@ -39,15 +39,10 @@ class Conference
      */
     private $notes;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $eval;
 
     public function __construct()
     {
         $this->notes = new ArrayCollection();
-        $this->eval=0;
     }
 
     public function getId(): ?int
@@ -122,15 +117,4 @@ class Conference
         return $this;
     }
 
-    public function getEval(): ?bool
-    {
-        return $this->eval;
-    }
-
-    public function setEval(bool $eval): self
-    {
-        $this->eval = $eval;
-
-        return $this;
-    }
 }

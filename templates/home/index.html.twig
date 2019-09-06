@@ -23,9 +23,9 @@
                             {% if is_granted('ROLE_ADMIN') %}
                                 <a class="dropdown-item" href="{{ path('adminConferenceTop') }} ">Top 10</a>
                             {% endif %}
-                            <a class="dropdown-item" href="{{ path('conferenceVoted',{'id':app.user.id}) }}">Conference votées</a>
-                            <a class="dropdown-item" href="{{ path('conferenceNotVoted',{'id':app.user.id}) }}">Conference non votées</a>
-                            <a class="dropdown-item" href="{{ path('addConference',{'id':app.user.id})}}">Soumettre Conference</a>
+                            <a class="dropdown-item" href="{{ path('conferenceVoted',{'id':app.user.id}) }}">Conferences Evaluated</a>
+                            <a class="dropdown-item" href="{{ path('conferenceNotVoted',{'id':app.user.id}) }}">Conferences not Evaluateds</a>
+                            <a class="dropdown-item" href="{{ path('addConference',{'id':app.user.id})}}">Submit Conference</a>
                         </div>
                     </li>
                     {% endif %}
@@ -64,6 +64,11 @@
     {% endblock %}
     {% block tabconference %}
         {% set current_path = app.request.get('_route') %}
+        {% if current_path =='home' %}
+            <h1>Home</h1>
+        {% elseif current_path =='adminConference' %}
+            <h1>Admin Conferences</h1>
+        {% endif %}
         <table id="myTable">
             <thead>
                 <tr>
@@ -88,7 +93,7 @@
                         <td>{{conference.description}}</td>
                         <td>{{conference.moyenne}}</td>
                         {% if is_granted('ROLE_ADMIN') and current_path == 'adminConference' %}
-                            <td><a href="{{ path('conference_remove', {'id': conference.id}) }} ">Supprimer</a></td>
+                            <td><a href="{{ path('conference_remove', {'id': conference.id}) }} ">Remove</a></td>
                         {% endif %}
                     </tr>
                 {% endfor %}

@@ -9,6 +9,7 @@ use App\Entity\User;
 use App\Form\AddConferenceType;
 use App\Form\LoginUserType;
 use App\Form\NoteType;
+use App\Form\PatchUserType;
 use App\Form\RegisterUserType;
 use App\Repository\ConferenceRepository;
 use App\Repository\UserRepository;

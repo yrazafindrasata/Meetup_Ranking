@@ -309,7 +309,6 @@ class ConferenceController extends AbstractController
         $form = $this->createForm(UpdateConferenceType::class,$conference);
         $form->handleRequest($request);
         if($form->isSubmitted()&&$form->isValid()) {
-            $conference->setEval(1);
             $em->persist($conference);
             $em->flush();
         }
