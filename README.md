@@ -14,7 +14,8 @@ $ git clone https://github.com/yrazafindrasata/meetup_ranking.git
 ```bash
 cp .env.dist .env
 docker-compose up -d
-docker-compose exec --user=application web bash
-php bin/console doctrine:schema:update --force
+docker-compose exec --user=application web bash:
+	composer install
+	php bin/console doctrine:schema:update --force
 
 ```
