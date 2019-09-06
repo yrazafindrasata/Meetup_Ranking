@@ -21,7 +21,7 @@ services:
     volumes:
       - ./docker/mysql:/var/lib/mysql
     environment:
-      MYSQL_DATABASE: meetup_rating
+      MYSQL_DATABASE: meetup_ranking
       MYSQL_ROOT_PASSWORD: root
 
   phpmyadmin:
