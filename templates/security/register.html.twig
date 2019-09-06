@@ -3,7 +3,12 @@
     {% block navbar %}
         {{ parent() }}
     {% endblock %}
-    <h1>Sign Up</h1>
+    {% set current_path = app.request.get('_route') %}
+    {% if current_path =='register' %}
+        <h1>Sign Up</h1>
+    {% else %}
+        <h1>Add User</h1>
+    {% endif %}
     {{ form_start(form) }}
     {{ form_row(form.firstname) }}
     {{ form_row(form.lastname) }}

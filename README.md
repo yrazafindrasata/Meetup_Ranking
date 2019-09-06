@@ -19,3 +19,5 @@ docker-compose exec --user=application web bash:
 	php bin/console doctrine:schema:update --force
 
 ```
+
+ps: to create an admin, add ROLE_AMDIN to a user using phpmyadmin
